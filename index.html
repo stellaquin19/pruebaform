@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+        .font-luckiest {
+            font-family: 'Luckiest Guy', cursive;
+        }
+
+        .luckiest-guy-regular {
+            font-family: "Mulish", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+        }
+    </style>
+
+</head>
+
+<body class="">
+    <header class="bg-orange-50 font-sans text-orange-900">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center">
+                <a href="/index.html">
+                    <img src="assets/logo.webp" alt="hugo logo" class="h-15 rounded-full p-2 ml-11 mr-4">
+                </a>
+                <a href="/index.html" class="text-2xl font-luckiest font-medium">HUGO</a>
+            </div>
+            <div class="flex items-center justify-between space-x-8 mr-12">
+                <a href="/about.html"
+                    class="transition-all duration-400 hover:font-medium p-1 hover:border-b-2  hover:text-orange-600 ">Sobre
+                    nosotros</a>
+                <a href="/nuestrasAcciones.html"
+                    class="transition-all duration-400 hover:font-medium p-1 hover:border-b-2  hover:text-orange-600 ">Nuestras
+                    acciones</a>
+                <a href="/seVoluntario.html"
+                    class="transition-all duration-400 hover:font-medium p-1 hover:border-b-2  hover:text-orange-600 ">Sé
+                    voluntario</a>
+                <a href="/formularioContacto.html"
+                    class="transition-all duration-400 hover:font-medium p-1 hover:border-b-2  hover:text-orange-600 ">Contacto</a>
+            </div>
+        </div>
+    </header>
+
+    <section
+        class="bg-gradient-to-tl from-yellow-100 via-yellow-200 to-white flex items-center justify-center">
+
+        <div class="bg-orange-50 font-sans text-orange-900 p-20 my-20 font-luckiest-guy-regular rounded-2xl shadow-xl">
+            <h1 class="text-lg">¿Quieres saber más o necesitas comunicarte con nosotras? ¡Estamos para ti!</h1>
+
+            <form name="prueba" netlify >
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="email" name="floating_email" id="floating_email"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-yellow-500 focus:outline-none focus:ring-0 focus:border-yellow-600 peer"
+                        placeholder=" " required />
+                    <label for="floating_email"
+                        class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-yellow-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
+                        </label>
+                </div>
+                <div class="grid md:grid-cols-2 md:gap-6">
+                    <div class="relative z-0 w-full mb-5 group">
+                        <input type="text" name="floating_nombre" id="floating_nombre"
+                            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-yellow-500 focus:outline-none focus:ring-0 focus:border-yellow-600 peer"
+                            placeholder=" " required />
+                        <label for="floating_nombre"
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-yellow-600 peer-focus:dark:text-yellow-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                            Nombre</label>
+                    </div>
+                    <div class="relative z-0 w-full mb-5 group">
+                        <input type="text" name="floating_apellido" id="floating_apellido"
+                            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-yellow-500 focus:outline-none focus:ring-0 focus:border-yellow-600 peer"
+                            placeholder=" " required />
+                        <label for="floating_apellido"
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-yellow-600 peer-focus:dark:text-yellow-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Apellido
+                            </label>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 md:gap-6">
+                    <div class="relative z-0 w-full mb-5 group">
+                        <input type="tel" name="floating_telefono" id="floating_telefono"
+                            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-yellow-500 focus:outline-none focus:ring-0 focus:border-yellow-600 peer"
+                            placeholder=" "  />
+                        <label for="floating_telefono"
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-yellow-600 peer-focus:dark:text-yellow-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                            Telefono (opcional)</label>
+                    </div>
+                    <div class="relative z-0 w-full mb-5 group">
+                        <input type="text" name="floating_asunto" id="floating_asunto"
+                            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-yellow-500 focus:outline-none focus:ring-0 focus:border-yellow-600 peer"
+                            placeholder=" " required />
+                        <label for="floating_asunto"
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-yellow-600 peer-focus:dark:text-yellow-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Asunto
+                            </label>
+                    </div>
+                    <div class="relative z-0 w-full mb-10 group">
+                        <textarea name="floating_mensaje" id="floating_mensaje" required placeholder="Escribe tu mensaje aquí" class="p-2.5 w-110 text-sm text-gray-900 bg-transparent border-b-2 border-gray-300"></textarea>
+                    </div>
+                </div>
+                <button type="submit"class="text-white bg-yellow-700 hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-800 cursor-pointer">Enviar</button>
+            </form>
+
+        </div>
+    </section>
+
+
+
+
+
+</body>
+
+</html>
